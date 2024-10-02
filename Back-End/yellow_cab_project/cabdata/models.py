@@ -1,0 +1,21 @@
+from django.db import models
+
+class YellowCab(models.Model):
+    VendorID = models.IntegerField()
+    tpep_pickup_datetime = models.DateTimeField()
+    tpep_dropoff_datetime = models.DateTimeField()
+    passenger_count = models.IntegerField()
+    trip_distance = models.FloatField()
+    RatecodeID = models.IntegerField()
+    store_and_fwd_flag = models.CharField(max_length=1)
+    PULocationID = models.IntegerField()
+    DOLocationID = models.IntegerField()
+    payment_type = models.IntegerField()
+    fare_amount = models.FloatField()
+    extra = models.FloatField()
+    mta_tax = models.FloatField()
+    tip_amount = models.FloatField()
+    tolls_amount = models.FloatField()
+    improvement_surcharge = models.FloatField()
+    total_amount = models.FloatField()
+    congestion_surcharge = models.FloatField()
